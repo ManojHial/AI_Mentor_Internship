@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <title>Responsive Layout</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+header {
+  background-color: #e0f7fa;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  background-color: #00695c;
+  padding: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #004d40;
+}
+
+.mainBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.box {
+  background-color: white;
+  border: 2px solid red;
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .mainBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .mainBox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Web Design</h1>
+    <p>Resize the browser to see the layout change!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="mainBox">
+    <section class="box">Box 1</section>
+    <section class="box">Box 2</section>
+    <section class="box">Box 3</section>
+    <section class="box">Box 4</section>
+  </main>
+
+
+
+</body>
+</html>

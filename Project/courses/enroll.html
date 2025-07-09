@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy - Math for Beginners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <span class="nav-logo">EduLearn</span>
+        <a href="../main.html">Home</a>
+        <a href="math_enroll.html">Back to Course</a>
+    </nav>
+    <div class="container">
+        <div class="course-title">Buy: Math for Beginners</div>
+        <div class="desc">Complete your enrollment by making a payment.</div>
+        <form style="max-width:350px;margin:32px auto 0 auto;" onsubmit="event.preventDefault();document.getElementById('paymsg').style.display='block';">
+            <div style="margin-bottom:12px;">
+                <label>Name</label><br>
+                <input type="text" required style="width:100%;padding:8px;margin-top:4px;">
+            </div>
+            <div style="margin-bottom:12px;">
+                <label>Email</label><br>
+                <input type="email" required style="width:100%;padding:8px;margin-top:4px;">
+            </div>
+            <div style="margin-bottom:12px;">
+                <label>Card Number</label><br>
+                <input type="text" maxlength="16" pattern="[0-9]{16}" required style="width:100%;padding:8px;margin-top:4px;">
+            </div>
+            <div style="display:flex;gap:10px;margin-bottom:12px;">
+                <div style="flex:1;">
+                    <label>Expiry</label><br>
+                    <input type="text" maxlength="5" placeholder="MM/YY" required style="width:100%;padding:8px;margin-top:4px;">
+                </div>
+                <div style="flex:1;">
+                    <label>CVV</label><br>
+                    <input type="password" maxlength="3" pattern="[0-9]{3}" required style="width:100%;padding:8px;margin-top:4px;">
+                </div>
+            </div>
+            <button class="enroll-btn" type="submit" style="width:100%;">Pay ₹749</button>
+            <div id="paymsg" style="display:none;color:green;text-align:center;margin-top:16px;">Payment Successful! You are enrolled.</div>
+        </form>
+    </div>
+</body>
+</html>

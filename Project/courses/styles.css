@@ -1,0 +1,138 @@
+/* Common CSS for all enroll pages */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+}
+
+nav {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 0 0 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+nav .nav-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #bc0000;
+    letter-spacing: 1px;
+    margin-right: 32px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 18px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #bc0000;
+}
+
+.container {
+    max-width: 700px;
+    margin: 36px auto;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 36px 32px 32px 32px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.course-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.desc {
+    margin: 10px 0 22px 0;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.details {
+    margin: 18px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.details-list {
+    flex: 2;
+}
+
+.details-list strong {
+    display: inline-block;
+    width: 120px;
+    color: #333;
+}
+
+.sidebox {
+    flex: 1;
+    min-width: 220px;
+    background: #f5f8fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 18px 16px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.sidebox .price {
+    font-size: 1.3rem;
+    margin: 8px 0;
+}
+
+.sidebox .old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1rem;
+}
+
+.sidebox .new {
+    color: #bc0000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebox .enroll-btn {
+    background: #bc0000;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    margin-top: 18px;
+
+}
+
+.sidebox .enroll-btn:hover {
+    background: #910101;
+}
+
+ul {
+    margin: 8px 0 16px 20px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 18px 4vw;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sidebox {
+        margin-top: 24px;
+    }
+}
